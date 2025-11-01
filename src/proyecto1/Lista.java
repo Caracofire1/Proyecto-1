@@ -46,4 +46,13 @@ public class Lista {
             }
             return null;
         }
+        public String mostrar(){
+            Nodo aux= this.primero;
+            String lista="";
+            while(aux!=null){
+                lista+=aux.usuario+ ", ";
+                aux=aux.sig;
+            }
+            return lista; 
+        }
 }
