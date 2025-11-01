@@ -36,4 +36,14 @@ public class Lista {
                 }             
     }
 }
+        public Nodo buscar(String usuario){
+            if (this.primero!=null){
+                Nodo aux=this.primero;
+                while(aux!=null && !aux.usuario.equals(usuario)){
+                    aux=aux.sig;
+                }
+                return aux;
+            }
+            return null;
+        }
 }
